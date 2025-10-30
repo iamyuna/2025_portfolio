@@ -20,7 +20,7 @@ export default function Home(){
                     <div className="category about">
                         <NavLink to="/about">
                             <div className="img">
-                                <img src="/public/images/main_about_thumb.jpg" alt="소개 썸네일" />
+                                <img src="/images/main_about_thumb.jpg" alt="소개 썸네일" />
                             </div>
                             <div className="hover_text"><p>ABOUT</p></div>
                         </NavLink>        
@@ -28,7 +28,7 @@ export default function Home(){
                     <div className="category projects">
                         <NavLink to="/projects">
                             <div className="img">
-                                <img src="/public/images/main_projects_thumb.jpg" alt="프로젝트 썸네일" />
+                                <img src="/images/main_projects_thumb.jpg" alt="프로젝트 썸네일" />
                             </div>
                             <div className="hover_text"><p>PROJECTS</p></div>
                         </NavLink>           
@@ -36,7 +36,7 @@ export default function Home(){
                     <div className="category contact">
                         <NavLink to="/contact">
                             <div className="img">
-                                <img src="/public/images/main_contact_thumb.jpg" alt="연락처 썸네일" />
+                                <img src="/images/main_contact_thumb.jpg" alt="연락처 썸네일" />
                             </div>
                             <div className="hover_text"><p>CONTACT</p></div>
                         </NavLink>        
