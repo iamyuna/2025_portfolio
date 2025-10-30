@@ -71,15 +71,7 @@
                     padding: 3px 8px;
                     border-radius: 5px;
                     margin-right: 5px;
-
-                    &.html {color: #04b8f0;}
-                    &.css {color: #ff41d1;}
-                    &.scss {color: #ff107e;}
-                    &.styled-components {color: #c65efd;}
-                    &.tailwind {color: #c65efd;}
-                    &.javascript {color: #00ce76;}
-                    &.react {color: #ff9e00;}
-                    &.next {color: #0052ce;}
+                    color: #0052ce;
                 }
             }
         }

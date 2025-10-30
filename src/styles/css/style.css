@@ -359,29 +359,6 @@ section {
   padding: 3px 8px;
   border-radius: 5px;
   margin-right: 5px;
-}
-.work_list > li .text_wrap .skill_list li.html {
-  color: #04b8f0;
-}
-.work_list > li .text_wrap .skill_list li.css {
-  color: #ff41d1;
-}
-.work_list > li .text_wrap .skill_list li.scss {
-  color: #ff107e;
-}
-.work_list > li .text_wrap .skill_list li.styled-components {
-  color: #c65efd;
-}
-.work_list > li .text_wrap .skill_list li.tailwind {
-  color: #c65efd;
-}
-.work_list > li .text_wrap .skill_list li.javascript {
-  color: #00ce76;
-}
-.work_list > li .text_wrap .skill_list li.react {
-  color: #ff9e00;
-}
-.work_list > li .text_wrap .skill_list li.next {
   color: #0052ce;
 }
 
