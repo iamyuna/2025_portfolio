@@ -1,0 +1,35 @@
+/* _layout.scss */
+
+section {
+  @include container;
+}
+
+.sub_section {
+    min-height: 100vh;
+    padding-top: 300px;
+
+    .content_wrap {
+        padding-bottom: 300px;
+    }
+
+    .title_wrap {
+        @include flex(space-between, flex-end);
+
+        .sub_title {
+            font-size:52px;
+
+            em {
+                display: inline-block;
+                font-size:20px;
+                vertical-align:text-top;
+                margin-top:3px;
+            }
+        }
+        .scroll {
+            font-size:24px;
+            margin-bottom:6px;
+            padding-right: 23px;
+            background: url(/images/arrow1.png) no-repeat center right / 10px;
+        }
+    }
+}

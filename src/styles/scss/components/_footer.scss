@@ -1,0 +1,61 @@
+/* _footer.scss */
+
+
+.footer {
+    background: #eee;
+}
+.footer_wrap {
+    @include flex(space-between, normal);
+    @include container;
+    padding: 110px 0 490px;
+    background: url(/images/footer_bg.png) no-repeat center bottom / 100%;
+
+    .resume_wrap {
+        .title {
+            display: block;
+            font-size: 50px;
+            font-weight: 400;
+        }
+        .pdf_btn {
+            display: inline-block;
+            font-size: 18px;
+            padding: 15px 30px;
+            border-radius: 50vh;
+            background-color: $color-btn;
+            margin-top: 25px;
+        }
+    }
+
+    .contact_wrap {
+        display: flex;
+        padding: 22px 60px 0 0;
+
+        .sns {
+            margin-left: 80px;
+        }
+
+        h3 {
+            display: block;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        ul {
+            margin-top: 20px;
+
+            li {
+                margin-top: 10px;
+
+                a {
+                    font-size: 20px;
+                    color: $color-light;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: $color-text;
+                    }
+                }
+            }
+        }
+    }
+}

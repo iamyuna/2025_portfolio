@@ -1,0 +1,14 @@
+/* _global.scss */
+@import './variables';
+@import './mixins';
+
+html, body, #root {
+  width: 100%;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-style: normal;
+  color: $color-text;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  background-color: $color-bg-white;
+}
+
