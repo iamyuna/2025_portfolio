@@ -7,13 +7,13 @@ export default function Home(){
             <div className="content_wrap">
                 <div className="main_title_wrap">
                     <strong className="main_title">
-                        Front-end Developer<br/>
-                        & Web Publisher
+                        Bridging Design <br />
+                        and Development
                     </strong>
                     <p className="mini_title">
-                        A dedicated and skilled <br/>
-                        Front-end Developer & Web Publisher<br/>
-                        who thrives on continuous learning
+                        Between design and development,<br/>
+                        I focus on balance — clarity, precision, and flow,<br/>
+                        crafting calm yet engaging web experiences.
                     </p>
                 </div>
                 <div className="category_wrap">
