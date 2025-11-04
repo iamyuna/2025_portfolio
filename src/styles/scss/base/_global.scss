@@ -5,10 +5,10 @@
 html, body, #root {
   width: 100%;
   font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-size: clamp(10px, 1.2vw, 16px);
   font-style: normal;
   color: $color-text;
   line-height: normal;
   letter-spacing: -0.02em;
   background-color: $color-bg-white;
 }
-

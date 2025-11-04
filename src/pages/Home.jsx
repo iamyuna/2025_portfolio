@@ -7,12 +7,12 @@ export default function Home(){
             <div className="content_wrap">
                 <div className="main_title_wrap">
                     <strong className="main_title">
-                        Bridging Design <br />
+                        Bridging Design 
                         and Development
                     </strong>
                     <p className="mini_title">
                         Between design and development,<br/>
-                        I focus on balance — clarity, precision, and flow,<br/>
+                        I focus on balance — clarity and flow,<br/>
                         crafting calm yet engaging web experiences.
                     </p>
                 </div>

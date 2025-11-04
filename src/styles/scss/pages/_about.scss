@@ -1,49 +1,82 @@
 .about_section {
     .period {
         display: inline-block;
-        font-size: 24px;
+        font-size: 1.5rem;
         color: #B3B2B2;
     }
+
     
-    .career_wrap {
+    .content {
         margin-top: 150px;
         
-        .career_list li {
-            strong {
-                display: block;
-                font-size: 20px;
-                font-style: italic;
-                font-weight: 500;
-                margin-bottom: 30px;
-            }
-            p {
-                font-size: 18px;
-                color: $color-gray;
+        &.career_wrap {
+            margin-bottom: 200px;
 
-                & + p {
-                    margin-top: 10px;
+            .career_list li {
+                strong {
+                    display: block;
+                    font-size: 1.3rem;
+                    font-style: italic;
+                    font-weight: 500;
+                    margin-bottom: 30px;
+                }
+                p {
+                    font-size: 1.2rem;
+                    color: $color-gray;
+
+                    & + p {
+                        margin-top: 10px;
+                    }
+                }
+
+                & + li {
+                    margin-top: 100px;
                 }
             }
+        }
 
-            & + li {
-                margin-top: 100px;
+        &.skills_wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px 20px;
+
+            li {
+                flex: 0 0 calc(25% - 15px);
+                max-width: 220px;
+                text-align: center;
+
+                p {
+                    font-size: 1.4rem;
+                    margin-top: 20px;
+                }
             }
         }
     }
+}
 
-    .skills_wrap {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 80px;
+@media (max-width: 1200px) {
+    .about_section .content {
+        margin-top: 150px;
 
-        li {
-            width: 220px;
-            text-align: center;
-            margin:70px 65px 0 0;
+        &.skills_wrap li {
+            max-width: none;
+        }
+    }
+}
 
-            p {
-                font-size: 22px;
-                margin-top: 20px;
+@media (max-width: 768px) {
+    .about_section .content {
+        margin-top: 50px;
+
+        &.skills_wrap {
+            gap: 30px 22px; 
+
+            li {
+                flex: 0 0 calc(33.333% - 15px);
+
+                p {
+                    margin-top: 10px;
+                }
             }
         }
     }

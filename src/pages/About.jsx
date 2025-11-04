@@ -23,7 +23,7 @@ export default function About(){
                     <span className="sub_title">My Career <p className="period">*총 3년 5개월</p></span>
                     <span className="scroll">Scroll Down</span>
                 </div>
-                <div className="career_wrap">
+                <div className="content career_wrap">
                     <ul className="career_list">
                         {aboutData.career?.map((career, id) => {
                             return(
@@ -42,7 +42,7 @@ export default function About(){
                 <div className="title_wrap">
                     <span className="sub_title">My Skills</span>
                 </div>
-                <ul className="skills_wrap">
+                <ul className="content skills_wrap">
                     {aboutData.skills?.map((skill, id) => {
                         return(
                             <li key={id}>

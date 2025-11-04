@@ -5,13 +5,14 @@
         @include flex(space-between, flex-end);
 
         .main_title {
-            font-size:130px;
-            font-weight:400;
-            letter-spacing:-0.02em;
+            width: 63%;
+            font-size: 7.5rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
         }
         .mini_title {
-            font-size:22px;
-            margin-bottom:25px;
+            font-size: 1.2rem;
+            margin-bottom: 25px;
         }
     }
 
@@ -26,31 +27,21 @@
             position: relative;
             flex: 1 1 calc(50% - 25px);
 
-            &.about {
-                aspect-ratio: 10 / 13;
-            }
-            &.projects {
-                aspect-ratio: 1 / 1;
-            }
             &.contact {
-                aspect-ratio: 17 / 10;
                 flex: 1 1 80%;
                 margin: 150px 0 0 20%;
             }
 
             a {
-                @include absolute;
-                @include full-size;
+                display: block;
                 overflow: hidden;
                 background-color: $color-bg-dark;
 
                 .img {
-                    @include full-size;
                     transition: 0.6s;
                 }
 
                 img {
-                    @include full-size;
                     display: block;
                     object-fit: cover;
                 }
@@ -75,6 +66,65 @@
                 &:hover .hover_text p {
                     transform: translateY(0px);
                 }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .main_section {
+        .main_title_wrap {
+            display: block;
+
+            .main_title {
+                width: auto;
+            }
+            .mini_title {
+                margin: 50px 0 0;
+            }
+        }
+
+        .category_wrap {
+            gap: 30px;
+            padding-top: 130px;
+
+            .category.contact {
+                margin-top: 100px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .main_section {
+        padding: 200px 0;
+
+        .main_title_wrap .main_title {
+            font-size: 5.5rem;
+        }
+
+        .category_wrap {
+            display: block;
+
+            .category a .img {
+                position: relative;
+                padding-bottom: 100%;
+
+                img {
+                    @include absolute;
+                    @include full-size;
+                }
+            }
+
+            .category + .category {
+                margin-top: 50px;
+            }
+
+            .category.contact {
+                width: 100%;
+                margin-left: 0;
             }
         }
     }

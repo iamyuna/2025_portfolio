@@ -18,9 +18,6 @@ export default function Header() {
                 <div className="gnb_wrap">
                     <ul className="gnb">
                         <li>
-                            <NavLink to="/" end className={({isActive}) => (isActive ? "active" : "")}>HOME</NavLink>
-                        </li>
-                        <li>
                             <NavLink to="/projects" className={({isActive}) => (isActive ? "active" : "")}>PROJECTS</NavLink>
                         </li>
                         <li>
